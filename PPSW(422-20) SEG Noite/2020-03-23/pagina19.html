@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Página 19</title>
+		<style>
+			table, td, th {
+				border: gray 1px solid;
+				border-spacing: 0;
+			}
+
+			th {
+				background-color: silver;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1>Tabelas</h1>
+
+		<table><!-- define o início e fim da tabela -->
+			<caption>Empresa de TI. Fonte: Wikipedia.org.</caption><!-- define uma legenda para tabela -->
+			<tr><!-- table row (linha da tabela) -->
+				<th>Empresas</th><!-- table header (título da tabela) -->
+				<th>Fundador</th>
+				<th>Co-fundador</th>
+			</tr>
+
+			<tr>
+				<td>Apple Inc.</td><!-- table data (dado da tabela) -->
+				<td>Steven Paul Jobs</td>
+				<td>Stephen Gary Wozniack</td>
+			</tr>
+
+			<tr>
+				<td>Microsoft Corporation</td>
+				<td>Willian Henry Gates III</td>
+				<td>Paul Gardner Allen</td>
+			</tr>
+
+			<tr>
+				<td>IBM</td>
+				<td>Charles Ranlet Flint</td>
+				<td>Thomas John Watson</td>
+			</tr>
+		</table>
+
+		<h1>Editores HTML</h1>
+
+		<table>
+			<caption>Editores HTML. Fonte: Wikipedia.org.</caption>
+
+			<tr>
+				<th colspan="5">Principais Editores HTML</th><!-- colspan mescla 2 ou mais colunas -->
+			</tr>
+
+			<tr>
+				<th style="background-color: white;">Dreamweaver</th>
+				<th style="background-color: white;">KompoZer</th>
+				<th style="background-color: white;">Notepad++</th>
+				<th style="background-color: white;">Sublime Text</th>
+				<th style="background-color: white;">WYSIWYG Web Builder</th>
+			</tr>
+
+			<tr>
+				<td><img src="imagens/adobeDreamwaver.jpg" height="100"></td>
+				<td><img src="imagens/kompozer.png" height="100"></td>
+				<td><img src="imagens/notePad.png" height="100"></td>
+				<td><img src="imagens/sublimeText.png" height="100"></td>
+				<td><img src="imagens/wysiwygWebBuilder.png" height="100"></td>
+			</tr>
+		</table>
+
+		<h1>Vídeo-Aulas de Programação</h1>
+
+		<table>
+			<caption>Vídeos sobre Linguagens de Programação</caption>
+
+			<tr>
+				<th>Linguagem</th>
+				<th>Conteúdo</th>
+				<th>Vídeo</th>
+			</tr>
+
+			<tr>
+				<td rowspan="3">Linguagem C</td><!-- rowspan mescla 2 ou mais linhas -->
+				<td>Baixando e Instalando a IDE</td>
+				<td><video controls width="200">
+					<source src="midias/Aula01.mp4" type="video/mp4">
+				</video></td>
+			</tr>
+
+			<tr>
+				<td>Construindo o Primeiro Programa</td>
+				<td><video controls width="200">
+					<source src="midias/Aula02.mp4" type="video/mp4">
+				</video></td>
+			</tr>
+
+			<tr>
+				<td>Operadores Aritméticos</td>
+				<td><video controls width="200">
+					<source src="midias/Aula03.mp4" type="video/mp4">
+				</video></td>
+			</tr>
+		</table>
+	</body>
+</html>
