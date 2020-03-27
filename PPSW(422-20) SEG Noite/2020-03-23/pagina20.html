@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Página 20</title>
+	</head>
+
+	<body>
+		<h1>Formulário de Cadastro</h1>
+
+		<form>
+			<fieldset>
+				<legend>Identificação do Usuário</legend>
+
+				<p><label for="nome">Nome:</label>
+					<input type="text" id="nome" size="25" maxlength="30" placeholder="Nome completo" autofocus>
+				</p>
+
+				<p><label for="senha">Senha:</label>
+					<input type="password" id="senha" size="8" maxlength="8" placeholder="8 dígitos">
+				</p>
+
+				<p><label for="email">E-mail:</label>
+					<input type="email" id="email" size="30" maxlength="40">
+				</p>
+
+				<p><label for="telefone">Telefone:</label>
+					<input type="tel" id="telefone" size="10" title="Digite o telefone no formato: (00)0000-0000" pattern="\([0-9]{2}\)[0-9]{4,5}-[0-9]{4}">
+				</p>
+
+				<fieldset>
+					<legend>Sexo:</legend>
+
+					<input type="radio" id="feminino" name="sexo" value="F">
+					<label for="feminino">Feminino</label>
+
+					<input type="radio" id="masculino" name="sexo" value="M">
+					<label for="masculino">Masculino</label>
+
+					<input type="radio" id="naoinformado" name="sexo" value="NI" checked>
+					<label for="naoinformado">Prefiro não informar</label>
+				</fieldset>
+
+				<p><label for="data">Data de nascimento:</label>
+					<input type="date" id="data">
+				</p>
+
+				<p><label for="hora">Hora de nascimento:</label>
+					<input type="time" id="hora">
+				</p>
+			</fieldset>
+		</form>
+	</body>
+</html>
