@@ -1,0 +1,41 @@
+body {
+	font-family: verdana;
+}
+
+p, a {
+	font-size: 11pt;
+}
+
+address {
+	font-size: 10pt;
+	font-style: normal;
+	text-transform: capitalize;
+	text-decoration: line-through;
+	text-align: right;
+}
+
+h1 {
+	text-transform: uppercase;
+	/* text-decoration: overline; */
+	text-decoration: underline overline;
+	text-align: center;
+}
+
+a {
+	text-transform: lowercase;
+	text-decoration: none;
+}
+
+span {
+	text-transform: none;
+}
+
+h2 {
+	text-decoration: underline;
+}
+
+p {
+	text-align: justify;
+	text-indent: 50px;
+	line-height: 17pt;
+}
