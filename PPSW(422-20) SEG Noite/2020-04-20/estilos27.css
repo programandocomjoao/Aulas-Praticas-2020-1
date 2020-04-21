@@ -1,11 +1,10 @@
 body {
+	background-color: silver;
 	font-family: verdana;
-	background-image: linear-gradient(silver, gray, silver);
 }
 
 h1, h2 {
 	font-weight: normal;
-	color: #666666;
 }
 
 p {
@@ -28,27 +27,25 @@ address {
 	font-style: normal;
 }
 
-p, blockquote, address, pre {
-	color: #555555;
-}
-
 div#conteudo {
 	background-color: white;
+	color: gray;
 	/* width: 700px; */
 	width: 90%;
-	/* padding: 10px */;
+	/* padding: 10px; */
 	padding: 2%;
 	border: black 1px solid;
-	/* border: gray 5px double; */
-	/* border: gray 10px groove; */
-	/* border: gray 10px ridge; */
+	/* border: red 5px double; */
+	/* border: yellow 10px groove; */
+	/* border: yellow 10px ridge; */
 	/* border: gray 10px inset; */
 	/* border: gray 10px outset; */
-	/* border: gray 5px dotted; */
-	/* border: gray 5px dashed; */
+	/* border: blue 4px dotted; */
+	/* border: blue 4px dashed; */
 	/* margin: 20px; */
 	margin: 0 auto;
-	box-shadow: 5px 5px 10px black;}
+	box-shadow: 5px 5px 5px black;
+}
 
 div#formulario {
 	background-color: white;
@@ -56,5 +53,5 @@ div#formulario {
 	padding: 2%;
 	border: black 1px solid;
 	margin: 0 auto;
-	box-shadow: 5px 5px 10px black;
+	box-shadow: 5px 5px 5px black;
 }
