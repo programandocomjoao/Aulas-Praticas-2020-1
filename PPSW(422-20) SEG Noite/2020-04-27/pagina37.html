@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Página 37</title>
+	</head>
+
+	<body>
+		<h1>Acesso ao Site</h1>
+
+		<form>
+			<fieldset>
+				<legend>Autenticação de Usuário</legend>
+
+				<p><label for="usuario">Usuário:</label>
+				<input type="text" id="usuario" size="20">
+				<a href="javascript:void(0);" onclick="
+					document.getElementById('usuario').type = 'password';
+				">Ocultar</a>
+				</p>
+
+				<p><label for="senha">Senha:</label>
+				<input type="password" id="senha" size="20">
+				<a href="javascript:void(0);" onclick="
+					document.getElementById('senha').type = 'text';
+				">Visualizar</a>
+				</p>
+
+
+				<p><label for="classificacao">Classificação:</label>
+				1 <input type="range" id="classificacao" step="1" min="1" max="10" onchange="
+					document.getElementById('valor').value = document.getElementById('classificacao').value;
+				"> 10
+				<input type="text" id="valor" size="5">
+				</p>
+
+				<p><input type="submit" value="Acessar"></p>
+			</fieldset>
+		</form>
+	</body>
+</html>
