@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<script src="scripts45.js"></script>
+		<title>Página 45</title>
+	</head>
+
+	<body>
+		<h1>Calculadora em JavaScript</h1>
+
+		<form>
+			<fieldset>
+				<legend>Dados para Cálculo</legend>
+
+				<p><label for="n1">Valor 1:</label>
+				<input type="text" id="n1" size="5"></p>
+
+				<p><label for="n2">Valor 2:</label>
+				<input type="text" id="n2" size="5"></p>
+
+				<hr>
+
+				<p>
+				<input type="button" value="+" onclick="somar();">
+				<input type="button" value="-" onclick="subtrair();">
+				<input type="button" value="x" onclick="multiplicar();">
+				<input type="button" value=":" onclick="dividir();">
+				</p>
+
+				<hr>
+
+				<p><label for="resultado">Resultado:</label>
+				<output id="resultado" name="resultado"></output></p>
+			</fieldset>
+		</form>
+	</body>
+</html>
