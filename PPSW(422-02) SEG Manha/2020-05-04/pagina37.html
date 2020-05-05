@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Página 37</title>
+	</head>
+	
+	<body>
+		<h1>Acesso ao Site</h1>
+
+		<form>
+			<fieldset>
+				<legend>Autenticar Usuário</legend>
+
+				<p><label for="usuario">Usuário</label>
+				<input type="text" id="usuario" size="20"></p>
+
+				<p><label for="senha">Senha:</label>
+				<input type="password" id="senha" size="20">
+				<input type="button" value="Ver" onclick="
+					document.getElementById('senha').type = 'text';
+				">
+				<input type="button" value="Ocultar" onclick="
+					document.getElementById('senha').type = 'password';
+				">
+				<img src="imagens/kompozer.png" height="20" onclick="
+					var tipo = document.getElementById('senha').type;
+					
+					if (tipo == 'password')
+						document.getElementById('senha').type = 'text';
+
+					if (tipo == 'text')
+						document.getElementById('senha').type = 'password';
+				">
+				</p>
+
+				<p><input type="submit" value="Acessar"></p>
+			</fieldset>
+		</form>
+	</body>
+</html>

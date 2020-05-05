@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Página 36</title>
+	</head>
+
+	<body>
+		<h1>Manipulando Objetos</h1>
+
+		<hr>
+		<a href="javascript:void(0);" onclick="
+			document.getElementById('bandeira').src = 'imagens/alemanha.png';
+			document.getElementById('bandeira').title = 'Bandeira da Alemanha';
+			document.getElementById('bandeira').alt = 'Bandeira da Alemanha';
+		">Alemanha</a> |
+
+		<a href="javascript:void(0);" onclick="
+			document.getElementById('bandeira').src = 'imagens/italia.png';
+			document.getElementById('bandeira').title = 'Bandeira da Itália';
+			document.getElementById('bandeira').alt = 'Bandeira da Itália';
+		">Itália</a> |
+
+		<a href="javascript:void(0);" onclick="
+			document.getElementById('bandeira').src = 'imagens/argentina.png';
+			document.getElementById('bandeira').title = 'Bandeira da Argentina';
+			document.getElementById('bandeira').alt = 'Bandeira da Argentina';
+		">Argentina</a> |
+
+		<a href="javascript:void(0);" onclick="
+			document.getElementById('bandeira').src = 'imagens/brasil.png';
+			document.getElementById('bandeira').title = 'Bandeira do Brasil';
+			document.getElementById('bandeira').alt = 'Bandeira do Brasil';
+		">Brasil</a>
+		<hr>
+
+		<img src="imagens/brasil.png" title="Bandeira do Brasil" alt="Bandeira do Brasil" id="bandeira">
+
+		<hr>
+
+		<form>
+			<label for="aval">Avalie este exemplo:</label><br>
+			1 <input type="range" id="aval" min="1" max="10" step="1" onchange="
+				var valor = document.getElementById('aval').value;
+				document.getElementById('num').value = valor;
+			"> 10
+			<input type="text" id="num" size="3">
+		</form>
+	</body>
+</html>
