@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Página 48</title>
+	</head>
+
+	<body>
+		<h1>Objeto Math</h1>
+
+		<script>
+			var raio = Number(window.prompt("Digite o raio da esfera:", ""));
+
+			/*
+			Fórmula do comprimento: C = 2 * PI * Raio
+			Fórmula da área: A = PI * Raio2
+			Fórmula do volume: V = 3/4 * PI * Raio3
+			*/
+
+			var C = 2 * Math.PI * raio;
+			var A = Math.PI * Math.pow(raio, 2);
+			var V = 0.75 * Math.PI * Math.pow(raio, 3);
+		</script>
+
+		<ul>
+			<li>Comprimento: <script>document.write(C);</script>cm</li>
+			<li>Área: <script>document.write(A);</script>cm<sup>2</sup></li>
+			<li>Volume: <script>document.write(V);</script>cm<sup>3</sup></li>
+		</ul>
+	</body>
+</html>

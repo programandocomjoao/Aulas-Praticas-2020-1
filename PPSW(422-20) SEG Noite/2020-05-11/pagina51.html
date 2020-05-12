@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Página 51</title>
+	</head>
+
+	<body>
+		<h1>Estrutura de Seleção If</h1>
+
+		<script>
+			var n1 = Number(window.prompt("Digite a 1ª nota:", ""));
+			var n2 = Number(window.prompt("Digite a 2ª nota:", ""));
+			var n3 = Number(window.prompt("Digite a 3ª nota:", ""));
+
+			var media = (n1 + n2 + n3)/3;
+		</script>
+
+		<p>A média é <script>document.write(media);</script></p>
+
+		<p>Situação:
+			<script>
+				if (media >= 6)
+					document.write("aprovado");
+				else
+					document.write("reprovado");
+			</script>
+		</p>
+	</body>
+</html>

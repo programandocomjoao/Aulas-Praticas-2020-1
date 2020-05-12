@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Página 52</title>
+	</head>
+
+	<body>
+		<h1>Estrutura de Seleção If</h1>
+
+		<script>
+			var n1 = Number(window.prompt("Digite a 1ª nota:", ""));
+			var n2 = Number(window.prompt("Digite a 2ª nota:", ""));
+			var n3 = Number(window.prompt("Digite a 3ª nota:", ""));
+
+			var media = (n1 + n2 + n3)/3;
+			media = media.toFixed(2);
+		</script>
+
+		<p>A média é <script>document.write(media);</script></p>
+
+		<p>Situação:
+			<script>
+				if (media >= 6) {
+					document.write("aprovado. ");
+					var mais = media - 6;
+					mais = mais.toFixed(2);
+					document.write("Pontos a mais: " + mais);
+				}
+				else {
+					document.write("reprovado. ");
+					var menos = 6 - media;
+					menos = menos.toFixed(2);
+					document.write("Pontos a menos: " + menos);
+				}
+			</script>
+		</p>
+	</body>
+</html>
