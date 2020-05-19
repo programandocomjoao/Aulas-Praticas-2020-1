@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<link rel="stylesheet" href="estilos27.css">
+		<script src="funcoes.js"></script>
+		<title>Página 49</title>
+	</head>
 
+	<body>
+		<div id="conteudo">
+			<h1>Calculadora de Delta</h1>
+
+			<form>
+				<fieldset>
+					<legend>Dados para Calcular</legend>
+
+					<p><label for="A">A:</label>
+					<input type="text" id="A" size="5"></p>
+
+					<p><label for="B">B:</label>
+					<input type="text" id="B" size="5"></p>
+
+					<p><label for="C">C:</label>
+					<input type="text" id="C" size="5"></p>
+
+					<hr>
+					<p><input type="button" value="Calcular Delta" onclick="calcularDelta();"></p>
+					<hr>
+
+					<p><label for="delta">Delta:</label>
+					<output id="delta"></output></p>
+				</fieldset>
+			</form>
+		</div>
+	</body>
+</html>
