@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<link rel="stylesheet" href="estilos27.css">
+		<script src="funcoes.js"></script>
+		<title>Página 50</title>
+	</head>
+
+	<body>
+		<div id="conteudo">
+			<h1>Calculadora de Esfera</h1>
+
+			<form oninput="calcularComprimento(); calcularArea(); calcularVolume();">
+				<fieldset>
+					<legend>Dados para Calcular</legend>
+
+					<p><label for="raio">Raio:</label>
+					<input type="text" id="raio" size="5"></p>
+
+					<hr>
+					
+					<p><label for="C">Comprimento:</label>
+					<output id="C">0.00</output>cm</p>
+
+					<p><label for="A">Área:</label>
+					<output id="A">0.00</output>cm<sup>2</sup></p>
+
+					<p><label for="V">Volume:</label>
+					<output id="V">0.00</output>cm<sup>3</sup></p>
+				</fieldset>
+			</form>
+		</div>
+	</body>
+</html>
