@@ -1,1 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Página 57</title>
+	</head>
 
+	<body>
+		<h1>Estrutura de Repetição For</h1>
+
+		<p>Construir um script que leia 5 números, calcule e imprima o triplo de cada número.</p>
+
+		<script>
+			var numero, triplo, i;
+
+			for (i = 1; i <= 5; i++) {
+				numero = Number(window.prompt("Digite um número:", ""));
+				triplo = numero * 3;
+				document.write("<p>O triplo de " + numero + " é " + triplo + "</p>");
+			}
+		</script>
+	</body>
+</html>

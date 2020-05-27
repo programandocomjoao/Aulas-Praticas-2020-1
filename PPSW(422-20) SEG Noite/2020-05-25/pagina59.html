@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Página 59</title>
+	</head>
+
+	<body>
+		<h1>Estrutura de Repetição For</h1>
+
+		<p>Construir um script que leia 10 números inteiros, calcule e imprima a soma de todos os números lidos.</p>
+
+		<script>
+			var numero, i, soma = 0;
+
+			for(i = 1; i <= 10; i++) {
+				numero = parseInt(window.prompt("Digite o " + i + "º número:", ""));
+				soma += numero; // soma = soma + numero;
+			}
+		</script>
+
+		<p>A soma dos números é <script>document.write(soma);</script></p>
+	</body>
+</html>
