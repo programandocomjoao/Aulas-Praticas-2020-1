@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Página 69</title>
+	</head>
+
+	<body>
+		<h1>Estrutura de Repetição Do-While</h1>
+
+		<p>Construir um script que leia a nota de 10 alunos, calcule e imprima a média da turma. Não pode permitir nota abaixo de 0 (zero) e nem nota acima de 10 (dez).</p>
+
+		<script>
+			var nota, i, soma = 0;
+
+			for (i = 1; i <= 10; i++) {
+				
+				do {
+					nota = Number(window.prompt("Digite a nota do " + i + "º aluno:", ""));
+
+					if ((nota < 0) || (nota > 10))
+						window.alert("A nota deve estar entre 0(zero) e 10(dez)!!!");
+				} while ((nota < 0) || (nota > 10));
+				
+				soma += nota;
+			}
+
+			var media = soma / 10;
+		</script>
+
+		<p>A média da turma é <script>document.write(media);</script></p>
+	</body>
+</html>

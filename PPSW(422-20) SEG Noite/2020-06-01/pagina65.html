@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Página 65</title>
+	</head>
+
+	<body>
+		<h1>Estrutura de Repetição While</h1>
+
+		<p>Construir um script que leia o preço de uma quantidade indeterminada de produtos, calcule e imprima a soma de todos os preços. Flag de saída: preço menor ou igual a 0 (zero).</p>
+
+		<script>
+			var preco = Number(window.prompt("Digite o preço do Produto: R$", ""));
+			var soma = 0;
+
+			while (preco > 0) {
+				soma += preco;
+				preco = Number(window.prompt("Digite o preço do Produto: R$", ""));
+			}
+		</script>
+
+		<p>A soma dos preços de todos os produtos é R$ <script>document.write(soma);</script></p>
+	</body>
+</html>

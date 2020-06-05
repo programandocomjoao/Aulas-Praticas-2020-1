@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Página 63</title>
+	</head>
+
+	<body>
+		<h1>Estrutura de Repetição While</h1>
+
+		<p>Construir um script que leia uma quantidade indeterminada de números, calcule e imprima o triplo de cada número lido. Flag de saída: número igual a 0 (zero).</p>
+
+		<script>
+			var n, triplo;
+
+			while (n != 0) {
+				n = Number(window.prompt("Digite um número:", ""));
+
+				if (n != 0) {
+					triplo = n * 3;
+					document.write("<p>O triplo de " + n + " é " + triplo + "</p>");
+				}
+			}
+		</script>
+	</body>
+</html>
